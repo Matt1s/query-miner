@@ -29,6 +29,9 @@ COPY . /app
 RUN composer install --optimize-autoloader --no-dev --no-interaction
 RUN npm ci && npm run build
 
+# Verify build output exists
+RUN ls -la /app/public/build || echo "Build directory not created"
+
 # Create necessary directories with full permissions
 RUN mkdir -p storage/framework/cache/data \
     storage/framework/sessions \
@@ -66,6 +69,8 @@ RUN echo '#!/bin/sh' > /app/start.sh && \
     echo 'echo "Creating SQLite database..."' >> /app/start.sh && \
     echo 'touch /app/database/database.sqlite' >> /app/start.sh && \
     echo 'chmod 777 /app/database/database.sqlite' >> /app/start.sh && \
+    echo 'echo "Checking build assets..."' >> /app/start.sh && \
+    echo 'ls -la /app/public/build/ || echo "No build directory found"' >> /app/start.sh && \
     echo 'echo "Starting server on 0.0.0.0:${PORT}..."' >> /app/start.sh && \
     echo 'exec php artisan serve --host=0.0.0.0 --port=${PORT}' >> /app/start.sh && \
     chmod +x /app/start.sh
