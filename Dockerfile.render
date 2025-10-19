@@ -42,29 +42,30 @@ RUN echo '#!/bin/sh' > /app/start.sh && \
     echo 'set -e' >> /app/start.sh && \
     echo 'echo "=== Query Miner Startup ==="' >> /app/start.sh && \
     echo 'echo "Creating .env file..."' >> /app/start.sh && \
-    echo 'cat > /app/.env << EOF' >> /app/start.sh && \
-    echo 'APP_NAME=${APP_NAME}' >> /app/start.sh && \
-    echo 'APP_ENV=${APP_ENV}' >> /app/start.sh && \
+    echo 'cat > /app/.env << "EOF"' >> /app/start.sh && \
+    echo 'APP_NAME="Query Miner"' >> /app/start.sh && \
+    echo 'APP_ENV=production' >> /app/start.sh && \
     echo 'APP_KEY=' >> /app/start.sh && \
-    echo 'APP_DEBUG=${APP_DEBUG}' >> /app/start.sh && \
-    echo 'APP_URL=${APP_URL:-http://localhost}' >> /app/start.sh && \
-    echo 'LOG_CHANNEL=${LOG_CHANNEL}' >> /app/start.sh && \
-    echo 'LOG_LEVEL=${LOG_LEVEL}' >> /app/start.sh && \
+    echo 'APP_DEBUG=true' >> /app/start.sh && \
+    echo 'APP_URL=https://query-miner.onrender.com' >> /app/start.sh && \
+    echo 'LOG_CHANNEL=stack' >> /app/start.sh && \
+    echo 'LOG_LEVEL=debug' >> /app/start.sh && \
     echo 'DB_CONNECTION=sqlite' >> /app/start.sh && \
     echo 'SESSION_DRIVER=file' >> /app/start.sh && \
     echo 'CACHE_DRIVER=file' >> /app/start.sh && \
     echo 'QUEUE_CONNECTION=sync' >> /app/start.sh && \
-    echo 'GOOGLE_API_KEY=${GOOGLE_API_KEY}' >> /app/start.sh && \
-    echo 'GOOGLE_CX=${GOOGLE_CX}' >> /app/start.sh && \
     echo 'EOF' >> /app/start.sh && \
+    echo 'if [ ! -z "${GOOGLE_API_KEY}" ]; then' >> /app/start.sh && \
+    echo '  echo "GOOGLE_API_KEY=${GOOGLE_API_KEY}" >> /app/.env' >> /app/start.sh && \
+    echo 'fi' >> /app/start.sh && \
+    echo 'if [ ! -z "${GOOGLE_CX}" ]; then' >> /app/start.sh && \
+    echo '  echo "GOOGLE_CX=${GOOGLE_CX}" >> /app/.env' >> /app/start.sh && \
+    echo 'fi' >> /app/start.sh && \
     echo 'echo "Generating APP_KEY..."' >> /app/start.sh && \
     echo 'php artisan key:generate --force --no-interaction' >> /app/start.sh && \
     echo 'echo "Creating SQLite database..."' >> /app/start.sh && \
     echo 'touch /app/database/database.sqlite' >> /app/start.sh && \
     echo 'chmod 777 /app/database/database.sqlite' >> /app/start.sh && \
-    echo 'echo "Environment: ${APP_ENV}"' >> /app/start.sh && \
-    echo 'echo "Debug: ${APP_DEBUG}"' >> /app/start.sh && \
-    echo 'echo "Port: ${PORT}"' >> /app/start.sh && \
     echo 'echo "Starting server on 0.0.0.0:${PORT}..."' >> /app/start.sh && \
     echo 'exec php artisan serve --host=0.0.0.0 --port=${PORT}' >> /app/start.sh && \
     chmod +x /app/start.sh
