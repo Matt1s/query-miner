@@ -13,7 +13,7 @@
                 <button type="submit" class="absolute right-1 top-1/2 -translate-y-1/2 bg-gradient-to-r from-violet-600 to-indigo-600 text-white px-4 py-2 rounded-md">Search</button>
             </div>
 
-            <div id="status" class="mt-3 text-sm text-slate-500"></div>
+            <div id="status" class="mt-3 text-sm text-slate-500 break-all"></div>
         </form>
 
         <section id="resultsSection" class="mt-6 hidden">
