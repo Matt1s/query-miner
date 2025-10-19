@@ -118,9 +118,15 @@ GOOGLE_API_KEY=your_api_key_here
 GOOGLE_CX=your_search_engine_id_here
 ```
 
-4. Start containers:
+4. Build and start containers:
 ```bash
-docker-compose up -d
+docker-compose up -d --build
+```
+
+5. Generate application key (first time only):
+```bash
+docker-compose exec app php artisan key:generate --force
+docker-compose exec app php artisan config:clear
 ```
 
 The application will be available at `http://localhost:8080`
