@@ -36,8 +36,8 @@ RUN mkdir -p storage/framework/cache/data \
     storage/logs \
     bootstrap/cache
 
-# Set permissions
-RUN chmod -R 775 storage bootstrap/cache
+# Set permissions (must be writable by any user since we don't know the runtime user)
+RUN chmod -R 777 storage bootstrap/cache
 
 # Copy and setup entrypoint
 COPY docker-entrypoint-render.sh /usr/local/bin/

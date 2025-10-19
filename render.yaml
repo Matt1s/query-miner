@@ -10,11 +10,11 @@ services:
       - key: APP_ENV
         value: production
       - key: APP_DEBUG
-        value: "false"
+        value: "true"
       - key: LOG_CHANNEL
         value: stack
       - key: LOG_LEVEL
-        value: error
+        value: debug
       - key: SESSION_DRIVER
         value: file
       - key: CACHE_DRIVER
