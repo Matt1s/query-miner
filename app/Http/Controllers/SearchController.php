@@ -19,7 +19,8 @@ class SearchController extends Controller
         $q = $request->input('q');
 
         // Toggle this to true to use the local fixture instead of calling Google
-        $debug = true;
+        // Can be overridden by passing 'debug' parameter in the request
+        $debug = $request->boolean('debug', false);
 
         // If debug mode is enabled, return example_result.json fixture instead of calling Google
         if ($debug) {
@@ -91,5 +92,87 @@ class SearchController extends Controller
                 'raw' => $body,
             ]);
         }
+    }
+
+    /**
+     * Export search results as JSON file.
+     */
+    public function exportJson(Request $request)
+    {
+        $request->validate([
+            'q' => 'required|string|max:512',
+        ]);
+
+        // Perform the search
+        $searchResponse = $this->search($request);
+        $data = $searchResponse->getData(true);
+
+        if (isset($data['error'])) {
+            return response()->json($data, 500);
+        }
+
+        $filename = 'search-results-'.date('Y-m-d-His').'.json';
+
+        return response()->json($data, 200, [
+            'Content-Type' => 'application/json',
+            'Content-Disposition' => 'attachment; filename="'.$filename.'"',
+        ]);
+    }
+
+    /**
+     * Export search results as CSV file with UTF-8 BOM for Excel compatibility.
+     */
+    public function exportCsv(Request $request)
+    {
+        $request->validate([
+            'q' => 'required|string|max:512',
+        ]);
+
+        // Perform the search
+        $searchResponse = $this->search($request);
+        $data = $searchResponse->getData(true);
+
+        if (isset($data['error'])) {
+            return response()->json($data, 500);
+        }
+
+        $results = $data['results'] ?? [];
+
+        // Generate CSV with UTF-8 BOM
+        $csv = $this->generateCsv($results);
+
+        $filename = 'search-results-'.date('Y-m-d-His').'.csv';
+
+        return response($csv, 200, [
+            'Content-Type' => 'text/csv; charset=utf-8',
+            'Content-Disposition' => 'attachment; filename="'.$filename.'"',
+        ]);
+    }
+
+    /**
+     * Generate CSV content from results array with UTF-8 BOM.
+     */
+    protected function generateCsv(array $results): string
+    {
+        // Start with UTF-8 BOM for Excel compatibility
+        $csv = "\xEF\xBB\xBF";
+
+        // Add header row
+        $headers = ['title', 'snippet', 'link', 'displayLink'];
+        $csv .= implode(',', array_map(fn ($h) => '"'.$h.'"', $headers))."\r\n";
+
+        // Add data rows
+        foreach ($results as $result) {
+            $row = [];
+            foreach ($headers as $header) {
+                $value = $result[$header] ?? '';
+                // Escape double quotes by doubling them
+                $value = str_replace('"', '""', $value);
+                $row[] = '"'.$value.'"';
+            }
+            $csv .= implode(',', $row)."\r\n";
+        }
+
+        return $csv;
     }
 }

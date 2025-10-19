@@ -10,3 +10,7 @@ Route::get('/', function () {
 
 // API endpoint used by the frontend to perform search via Google Custom Search
 Route::post('/search/api', [SearchController::class, 'search']);
+
+// Export endpoints
+Route::post('/search/export/json', [SearchController::class, 'exportJson']);
+Route::post('/search/export/csv', [SearchController::class, 'exportCsv']);

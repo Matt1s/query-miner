@@ -83,9 +83,13 @@
                     status.textContent = 'Results for "' + q + '"';
                     renderResults(data);
                     resultsSection.classList.remove('hidden');
-                    // prepare download handlers
-                    downloadJson.onclick = () => downloadJSON(data);
-                    downloadCsv.onclick = () => downloadCSV(data);
+                    
+                    // Store query for export endpoints
+                    const currentQuery = q;
+                    
+                    // Update download handlers to call server-side export endpoints
+                    downloadJson.onclick = () => downloadFromServer('/search/export/json', currentQuery);
+                    downloadCsv.onclick = () => downloadFromServer('/search/export/csv', currentQuery);
                 } else {
                     status.textContent = data.error || 'Search failed';
                 }
@@ -94,24 +98,44 @@
             }
         });
 
-        function downloadJSON(data){
-            const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url; a.download = 'results.json'; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
-        }
+        async function downloadFromServer(endpoint, query) {
+            try {
+                const token = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+                const res = await fetch(endpoint, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRF-TOKEN': token,
+                    },
+                    body: JSON.stringify({ q: query })
+                });
 
-        function downloadCSV(data){
-            if(!data || !data.results) return;
-            const rows = [['title','snippet','link','displayLink']];
-            data.results.forEach(r => rows.push([r.title || '', r.snippet || '', r.link || '', r.displayLink || '']));
-            const csv = rows.map(r => r.map(cell => '"' + (String(cell).replace(/"/g,'""')) + '"').join(',')).join('\r\n');
-            // Prepend UTF-8 BOM to help Excel on Windows detect UTF-8 encoding
-            const csvWithBOM = '\uFEFF' + csv;
-            const blob = new Blob([csvWithBOM], { type: 'text/csv;charset=utf-8;' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url; a.download = 'results.csv'; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+                if (res.ok) {
+                    // Get the filename from Content-Disposition header or generate one
+                    const contentDisposition = res.headers.get('Content-Disposition');
+                    let filename = 'download';
+                    if (contentDisposition) {
+                        const match = contentDisposition.match(/filename="(.+)"/);
+                        if (match) filename = match[1];
+                    }
+
+                    // Download the file
+                    const blob = await res.blob();
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = filename;
+                    document.body.appendChild(a);
+                    a.click();
+                    a.remove();
+                    URL.revokeObjectURL(url);
+                } else {
+                    const error = await res.json();
+                    alert('Export failed: ' + (error.error || 'Unknown error'));
+                }
+            } catch (err) {
+                alert('Export failed: ' + err.message);
+            }
         }
     </script>
     @endpush
