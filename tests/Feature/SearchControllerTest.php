@@ -97,20 +97,6 @@ describe('SearchController::search', function () {
         }
     });
 
-    it('returns error when Google API credentials are missing and debug is false', function () {
-        // Skip if real credentials are set in environment
-        if (! empty(env('GOOGLE_API_KEY')) && ! empty(env('GOOGLE_CX'))) {
-            $this->markTestSkipped('Real credentials are set - cannot test missing credentials scenario');
-        }
-
-        $response = $this->postJson('/search/api', ['q' => 'test', 'debug' => false]);
-
-        $response->assertStatus(500);
-        $json = $response->json();
-        expect($json)->toHaveKey('error');
-        expect($json['error'])->toContain('not configured');
-    })->skip();
-
     it('handles Google API HTTP errors gracefully', function () {
         Http::fake([
             'www.googleapis.com/*' => Http::response(null, 500),
