@@ -42,6 +42,7 @@
     @endif
 
     @stack('head')
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 
 <body class="min-h-screen antialiased text-slate-800 flex flex-col justify-center">
