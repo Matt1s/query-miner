@@ -26,24 +26,50 @@ WORKDIR /app
 COPY . /app
 
 # Install dependencies
-RUN composer install --optimize-autoloader --no-dev
+RUN composer install --optimize-autoloader --no-dev --no-interaction
 RUN npm ci && npm run build
 
-# Create necessary directories
+# Create necessary directories with full permissions
 RUN mkdir -p storage/framework/cache/data \
     storage/framework/sessions \
     storage/framework/views \
     storage/logs \
-    bootstrap/cache
+    bootstrap/cache \
+    && chmod -R 777 storage bootstrap/cache
 
-# Set permissions (must be writable by any user since we don't know the runtime user)
-RUN chmod -R 777 storage bootstrap/cache
+# Create a startup script inline
+RUN echo '#!/bin/sh' > /app/start.sh && \
+    echo 'set -e' >> /app/start.sh && \
+    echo 'echo "=== Query Miner Startup ==="' >> /app/start.sh && \
+    echo 'echo "Creating .env file..."' >> /app/start.sh && \
+    echo 'cat > /app/.env << EOF' >> /app/start.sh && \
+    echo 'APP_NAME=${APP_NAME}' >> /app/start.sh && \
+    echo 'APP_ENV=${APP_ENV}' >> /app/start.sh && \
+    echo 'APP_KEY=' >> /app/start.sh && \
+    echo 'APP_DEBUG=${APP_DEBUG}' >> /app/start.sh && \
+    echo 'APP_URL=${APP_URL:-http://localhost}' >> /app/start.sh && \
+    echo 'LOG_CHANNEL=${LOG_CHANNEL}' >> /app/start.sh && \
+    echo 'LOG_LEVEL=${LOG_LEVEL}' >> /app/start.sh && \
+    echo 'DB_CONNECTION=sqlite' >> /app/start.sh && \
+    echo 'SESSION_DRIVER=file' >> /app/start.sh && \
+    echo 'CACHE_DRIVER=file' >> /app/start.sh && \
+    echo 'QUEUE_CONNECTION=sync' >> /app/start.sh && \
+    echo 'GOOGLE_API_KEY=${GOOGLE_API_KEY}' >> /app/start.sh && \
+    echo 'GOOGLE_CX=${GOOGLE_CX}' >> /app/start.sh && \
+    echo 'EOF' >> /app/start.sh && \
+    echo 'echo "Generating APP_KEY..."' >> /app/start.sh && \
+    echo 'php artisan key:generate --force --no-interaction' >> /app/start.sh && \
+    echo 'echo "Creating SQLite database..."' >> /app/start.sh && \
+    echo 'touch /app/database/database.sqlite' >> /app/start.sh && \
+    echo 'chmod 777 /app/database/database.sqlite' >> /app/start.sh && \
+    echo 'echo "Environment: ${APP_ENV}"' >> /app/start.sh && \
+    echo 'echo "Debug: ${APP_DEBUG}"' >> /app/start.sh && \
+    echo 'echo "Port: ${PORT}"' >> /app/start.sh && \
+    echo 'echo "Starting server on 0.0.0.0:${PORT}..."' >> /app/start.sh && \
+    echo 'exec php artisan serve --host=0.0.0.0 --port=${PORT}' >> /app/start.sh && \
+    chmod +x /app/start.sh
 
-# Copy and setup entrypoint
-COPY docker-entrypoint-render.sh /usr/local/bin/
-RUN chmod +x /usr/local/bin/docker-entrypoint-render.sh
+# Expose port
+EXPOSE 8000
 
-# Expose port (Render provides PORT env var)
-EXPOSE $PORT
-
-ENTRYPOINT ["docker-entrypoint-render.sh"]
+CMD ["/app/start.sh"]
