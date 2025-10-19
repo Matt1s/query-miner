@@ -1,0 +1,49 @@
+FROM php:8.2-cli
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    git \
+    curl \
+    libpng-dev \
+    libonig-dev \
+    libxml2-dev \
+    zip \
+    unzip \
+    nodejs \
+    npm \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# Install PHP extensions
+RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
+
+# Get Composer
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
+# Set working directory
+WORKDIR /app
+
+# Copy application files
+COPY . /app
+
+# Install dependencies
+RUN composer install --optimize-autoloader --no-dev
+RUN npm ci && npm run build
+
+# Create necessary directories
+RUN mkdir -p storage/framework/cache/data \
+    storage/framework/sessions \
+    storage/framework/views \
+    storage/logs \
+    bootstrap/cache
+
+# Set permissions
+RUN chmod -R 775 storage bootstrap/cache
+
+# Copy and setup entrypoint
+COPY docker-entrypoint-render.sh /usr/local/bin/
+RUN chmod +x /usr/local/bin/docker-entrypoint-render.sh
+
+# Expose port (Render provides PORT env var)
+EXPOSE $PORT
+
+ENTRYPOINT ["docker-entrypoint-render.sh"]

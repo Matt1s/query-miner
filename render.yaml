@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: query-miner
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile.render
+    envVars:
+      - key: APP_NAME
+        value: Query Miner
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: "false"
+      - key: LOG_CHANNEL
+        value: stack
+      - key: LOG_LEVEL
+        value: error
+      - key: SESSION_DRIVER
+        value: file
+      - key: CACHE_DRIVER
+        value: file
+      - key: QUEUE_CONNECTION
+        value: sync
+      - key: GOOGLE_API_KEY
+        sync: false
+      - key: GOOGLE_CX
+        sync: false
