@@ -11,13 +11,7 @@ export default defineConfig({
         tailwindcss(),
     ],
     build: {
-        manifest: true,
+        manifest: 'manifest.json', // Put manifest in build root, not build/.vite
         outDir: 'public/build',
-        rollupOptions: {
-            input: {
-                app: 'resources/js/app.js',
-                css: 'resources/css/app.css',
-            },
-        },
     },
 });
