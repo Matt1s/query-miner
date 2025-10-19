@@ -1,0 +1,779 @@
+{
+  "query": "Ceska republika",
+  "totalResults": "6610000",
+  "results": [
+    {
+      "title": "Czech Republic - Wikipedia",
+      "snippet": "The Czech Republic is a unitary parliamentary republic and developed country with an advanced, high-income social market economy.",
+      "link": "https://en.wikipedia.org/wiki/Czech_Republic",
+      "displayLink": "en.wikipedia.org"
+    },
+    {
+      "title": "Česko – Wikipedie",
+      "snippet": "Česko, plným názvem Česká republika, je vnitrozemský stát ve střední Evropě. ... Na jihu sousedí s Rakouskem, na západě s Německem, na severovýchodě s Polskem a ...",
+      "link": "https://cs.wikipedia.org/wiki/%C4%8Cesko",
+      "displayLink": "cs.wikipedia.org"
+    },
+    {
+      "title": "Česká republika - Pražský hrad",
+      "snippet": "Oficiální stránky prezidenta ČR. Informace o České republice, Ústavě ČR, státních symbolech a přehledu státních vyznamenání.",
+      "link": "https://www.hrad.cz/cs/ceska-republika",
+      "displayLink": "www.hrad.cz"
+    },
+    {
+      "title": "Rheinmetall Česká Republika s.r.o. – Partner for the Czech Republic",
+      "snippet": "Rheinmetall Česká Republika s.r.o., provides technical and logistic services to the Czech armed forces and Czech industrial partners.",
+      "link": "https://www.rheinmetall.com/en/company/subsidiaries/rheinmetall-ceska-republika",
+      "displayLink": "www.rheinmetall.com"
+    },
+    {
+      "title": "FAO Country Profiles: Czech Republic | Food and Agriculture ...",
+      "snippet": "The Facility promoted sharing of best practices among countries, supported the revision or formulation of new policies, and also supported successful regional ...",
+      "link": "https://www.fao.org/countryprofiles/index/en/?iso3=CZE",
+      "displayLink": "www.fao.org"
+    },
+    {
+      "title": "Charita Česká republika | 100 let z lásky k lidem",
+      "snippet": "Největší nestátní poskytovatel zdravotních a sociálních služeb v České republice. 389 839 lidí ročně dostane naši pomoc 85 869 dobrovolníků v celé republice 1 ...",
+      "link": "https://www.charita.cz/",
+      "displayLink": "www.charita.cz"
+    },
+    {
+      "title": "Albi.cz | Úvodní strana",
+      "snippet": "© ALBI Česká republika a.s. © 2025 © ALBI Česká republika a.s. , Thámova 13, 186 00, Praha 8, tel: +420 730 800 720, e-mail: eshop@albi.cz. Realizace ...",
+      "link": "https://albi.cz/",
+      "displayLink": "albi.cz"
+    },
+    {
+      "title": "Czech Republic | History, Flag, Map, Capital, Population, & Facts ...",
+      "snippet": "Czech Republic, also called Czechia, landlocked country located in central Europe. It comprises the historical provinces of Bohemia and Moravia along with the ...",
+      "link": "https://www.britannica.com/place/Czech-Republic",
+      "displayLink": "www.britannica.com"
+    },
+    {
+      "title": "BCD Travel Česká republika",
+      "snippet": "Partnering for profitable travel management. Providing travelers with the most advanced tools for safety, security and increased productivity.",
+      "link": "https://www.bcdtravel.com/country/czechrepublic/",
+      "displayLink": "www.bcdtravel.com"
+    },
+    {
+      "title": "Prague Czech Republic | Teradata Global Office Locations",
+      "snippet": "Learn more about our Teradata office located in Prague, Czech Republic. Find address and contact information here.",
+      "link": "https://www.teradata.com/about-us/office-locations/czech-republic",
+      "displayLink": "www.teradata.com"
+    }
+  ],
+  "raw": {
+    "kind": "customsearch#search",
+    "url": {
+      "type": "application/json",
+      "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+    },
+    "queries": {
+      "request": [
+        {
+          "title": "Google Custom Search - Ceska republika",
+          "totalResults": "6610000",
+          "searchTerms": "Ceska republika",
+          "count": 10,
+          "startIndex": 1,
+          "inputEncoding": "utf8",
+          "outputEncoding": "utf8",
+          "safe": "off",
+          "cx": "e61776ded6e5744ae"
+        }
+      ],
+      "nextPage": [
+        {
+          "title": "Google Custom Search - Ceska republika",
+          "totalResults": "6610000",
+          "searchTerms": "Ceska republika",
+          "count": 10,
+          "startIndex": 11,
+          "inputEncoding": "utf8",
+          "outputEncoding": "utf8",
+          "safe": "off",
+          "cx": "e61776ded6e5744ae"
+        }
+      ]
+    },
+    "context": {
+      "title": "query-miner"
+    },
+    "searchInformation": {
+      "searchTime": 0.440117,
+      "formattedSearchTime": "0.44",
+      "totalResults": "6610000",
+      "formattedTotalResults": "6,610,000"
+    },
+    "items": [
+      {
+        "kind": "customsearch#result",
+        "title": "Czech Republic - Wikipedia",
+        "htmlTitle": "<b>Czech</b> Republic - Wikipedia",
+        "link": "https://en.wikipedia.org/wiki/Czech_Republic",
+        "displayLink": "en.wikipedia.org",
+        "snippet": "The Czech Republic is a unitary parliamentary republic and developed country with an advanced, high-income social market economy.",
+        "htmlSnippet": "The <b>Czech</b> Republic is a unitary parliamentary republic and developed country with an advanced, high-income social market economy.",
+        "formattedUrl": "https://en.wikipedia.org/wiki/Czech_Republic",
+        "htmlFormattedUrl": "https://en.wikipedia.org/wiki/Czech_Republic",
+        "pagemap": {
+          "hcard": [
+            {
+              "fn": "Czech Republic"
+            }
+          ],
+          "metatags": [
+            {
+              "referrer": "origin",
+              "og:image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_Czech_Republic.svg/1200px-Flag_of_the_Czech_Republic.svg.png",
+              "theme-color": "#eaecf0",
+              "og:image:width": "1200",
+              "og:type": "website",
+              "viewport": "width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0",
+              "og:title": "Czech Republic - Wikipedia",
+              "og:image:height": "800",
+              "format-detection": "telephone=no"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "customsearch#result",
+        "title": "Česko – Wikipedie",
+        "htmlTitle": "Česko – Wikipedie",
+        "link": "https://cs.wikipedia.org/wiki/%C4%8Cesko",
+        "displayLink": "cs.wikipedia.org",
+        "snippet": "Česko, plným názvem Česká republika, je vnitrozemský stát ve střední Evropě. ... Na jihu sousedí s Rakouskem, na západě s Německem, na severovýchodě s Polskem a ...",
+        "htmlSnippet": "Česko, plným názvem <b>Česká republika</b>, je vnitrozemský stát ve střední Evropě. ... Na jihu sousedí s Rakouskem, na západě s Německem, na severovýchodě s Polskem a&nbsp;...",
+        "formattedUrl": "https://cs.wikipedia.org/wiki/Česko",
+        "htmlFormattedUrl": "https://cs.wikipedia.org/wiki/Česko",
+        "pagemap": {
+          "metatags": [
+            {
+              "referrer": "origin",
+              "og:image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_Czech_Republic.svg/1200px-Flag_of_the_Czech_Republic.svg.png",
+              "theme-color": "#eaecf0",
+              "og:image:width": "1200",
+              "og:type": "website",
+              "viewport": "width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0",
+              "og:title": "Česko – Wikipedie",
+              "og:image:height": "800",
+              "format-detection": "telephone=no"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "customsearch#result",
+        "title": "Česká republika - Pražský hrad",
+        "htmlTitle": "<b>Česká republika</b> - Pražský hrad",
+        "link": "https://www.hrad.cz/cs/ceska-republika",
+        "displayLink": "www.hrad.cz",
+        "snippet": "Oficiální stránky prezidenta ČR. Informace o České republice, Ústavě ČR, státních symbolech a přehledu státních vyznamenání.",
+        "htmlSnippet": "Oficiální stránky prezidenta <b>ČR</b>. Informace o České republice, Ústavě <b>ČR</b>, státních symbolech a přehledu státních vyznamenání.",
+        "formattedUrl": "https://www.hrad.cz/cs/ceska-republika",
+        "htmlFormattedUrl": "https://www.hrad.cz/cs/<b>ceska</b>-<b>republika</b>",
+        "pagemap": {
+          "cse_thumbnail": [
+            {
+              "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYIlOp4ve5J4cbqgzG2v5Ucyx8rIS2kekdcPbF6nPk1xlTM-6mYexTszwZ&s",
+              "width": "310",
+              "height": "163"
+            }
+          ],
+          "breadcrumb": [
+            {
+              "title": "Úvodní strana",
+              "url": "Úvodní strana"
+            }
+          ],
+          "metatags": [
+            {
+              "og:image": "https://www.hrad.cz/img/prezident/cs/social-media.jpg",
+              "twitter:card": "summary",
+              "twitter:title": "Česká republika - Pražský hrad",
+              "og:type": "article",
+              "og:site_name": "Pražský hrad",
+              "viewport": "width=device-width, initial-scale=1.0",
+              "author": "FG Forrest, a.s., www.fg.cz, 2015",
+              "og:title": "Česká republika - Pražský hrad",
+              "og:url": "https://www.hrad.cz/cs/ceska-republika",
+              "twitter:image": "https://www.hrad.cz/img/prezident/cs/social-media.jpg"
+            }
+          ],
+          "cse_image": [
+            {
+              "src": "https://www.hrad.cz/img/prezident/cs/social-media.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "customsearch#result",
+        "title": "Rheinmetall Česká Republika s.r.o. – Partner for the Czech Republic",
+        "htmlTitle": "Rheinmetall <b>Česká Republika</b> s.r.o. – Partner for the Czech Republic",
+        "link": "https://www.rheinmetall.com/en/company/subsidiaries/rheinmetall-ceska-republika",
+        "displayLink": "www.rheinmetall.com",
+        "snippet": "Rheinmetall Česká Republika s.r.o., provides technical and logistic services to the Czech armed forces and Czech industrial partners.",
+        "htmlSnippet": "Rheinmetall <b>Česká Republika</b> s.r.o., provides technical and logistic services to the Czech armed forces and Czech industrial partners.",
+        "formattedUrl": "https://www.rheinmetall.com/en/company/.../rheinmetall-ceska-republika",
+        "htmlFormattedUrl": "https://www.rheinmetall.com/en/company/.../rheinmetall-<b>ceska</b>-<b>republika</b>",
+        "pagemap": {
+          "cse_thumbnail": [
+            {
+              "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpLauZJCXiUQ7WEFugshiRvIDGLIj-LXjzoATrcFdYtRNnCDLQ5YRVoETz&s",
+              "width": "233",
+              "height": "216"
+            }
+          ],
+          "metatags": [
+            {
+              "msapplication-tilecolor": "#ffffff",
+              "og:image": "/Rheinmetall%20Group/General/Logos/Rheinmetall.png",
+              "theme-color": "#FFFFFF",
+              "og:type": "website",
+              "og:site_name": "Rheinmetall",
+              "viewport": "width=device-width, initial-scale=1",
+              "apple-mobile-web-app-title": "Rheinmetall",
+              "og:title": "Rheinmetall Česká Republika s.r.o. – Partner for the Czech Republic",
+              "mobile-web-app-capable": "yes"
+            }
+          ],
+          "cse_image": [
+            {
+              "src": "https://www.rheinmetall.com/Rheinmetall%20Group/Karriere/26782/image-thumb__26782__teaser-image-text/Rheinmetall-Jobportal.556106f6.jpg?1677079914"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "customsearch#result",
+        "title": "FAO Country Profiles: Czech Republic | Food and Agriculture ...",
+        "htmlTitle": "FAO Country Profiles: <b>Czech</b> Republic | Food and Agriculture ...",
+        "link": "https://www.fao.org/countryprofiles/index/en/?iso3=CZE",
+        "displayLink": "www.fao.org",
+        "snippet": "The Facility promoted sharing of best practices among countries, supported the revision or formulation of new policies, and also supported successful regional ...",
+        "htmlSnippet": "The Facility promoted sharing of best practices among countries, supported the revision or formulation of new policies, and also supported successful regional&nbsp;...",
+        "formattedUrl": "https://www.fao.org/countryprofiles/index/en/?iso3=CZE",
+        "htmlFormattedUrl": "https://www.fao.org/countryprofiles/index/en/?iso3=CZE",
+        "pagemap": {
+          "metatags": [
+            {
+              "twitter:card": "summary_large_image",
+              "twitter:title": "general profile",
+              "og:site_name": "Food and Agriculture Organization of the United Nations",
+              "twitter:site": "@FAO",
+              "viewport": "width=device-width, initial-scale=1",
+              "og:title": "general profile",
+              "dc.title": "FAO Country Profiles:Czech Republic",
+              "fb:admins": "100008875892400",
+              "language": "en",
+              "internet:breadcrumb": "Countries,index",
+              "og:url": "http://www.fao.org/countryprofiles/index/en/?iso3=CZE",
+              "twitter:creator": "@FAO"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "customsearch#result",
+        "title": "Charita Česká republika | 100 let z lásky k lidem",
+        "htmlTitle": "Charita <b>Česká republika</b> | 100 let z lásky k lidem",
+        "link": "https://www.charita.cz/",
+        "displayLink": "www.charita.cz",
+        "snippet": "Největší nestátní poskytovatel zdravotních a sociálních služeb v České republice. 389 839 lidí ročně dostane naši pomoc 85 869 dobrovolníků v celé republice 1 ...",
+        "htmlSnippet": "Největší nestátní poskytovatel zdravotních a sociálních služeb v <b>České republice</b>. 389 839 lidí ročně dostane naši pomoc 85 869 dobrovolníků v celé republice 1&nbsp;...",
+        "formattedUrl": "https://www.charita.cz/",
+        "htmlFormattedUrl": "https://www.charita.cz/",
+        "pagemap": {
+          "cse_thumbnail": [
+            {
+              "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqBIHxo-7oWniZKHV2QYzsMDEOSY_w6YYogQfWOoqWVpfxc0Mo848xeWo&s",
+              "width": "310",
+              "height": "163"
+            }
+          ],
+          "metatags": [
+            {
+              "og:image": "https://www.charita.cz/res/shared/images/og-default.jpg",
+              "msapplication-square70x70logo": "/res/shared/images/icon-70.png",
+              "theme-color": "#b91919",
+              "og:type": "website",
+              "og:image:width": "1200",
+              "og:site_name": "Charita Česká republika",
+              "author": "Charita Česká republika",
+              "og:title": "Charita Česká republika | 100 let z lásky k lidem",
+              "og:image:height": "630",
+              "msapplication-square150x150logo": "/res/shared/images/icon-150.png",
+              "og:description": "Jsme nezisková organizace s celostátní strukturou poskytující největší síť nestátních sociálních a zdravotních služeb v ČR.",
+              "dcterms.rightsholder": "(c) VIZUS.CZ s.r.o.",
+              "apple-mobile-web-app-status-bar-style": "#b91919",
+              "viewport": "width=device-width, initial-scale=1",
+              "dcterms.rights": "(c) VIZUS.CZ s.r.o. 25 | 3.2.14, 2025-01-28 09:29:50",
+              "og:url": "https://www.charita.cz/",
+              "dcterms.datecopyrighted": "2025",
+              "format-detection": "telephone=no"
+            }
+          ],
+          "cse_image": [
+            {
+              "src": "https://www.charita.cz/res/shared/images/og-default.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "customsearch#result",
+        "title": "Albi.cz | Úvodní strana",
+        "htmlTitle": "Albi.cz | Úvodní strana",
+        "link": "https://albi.cz/",
+        "displayLink": "albi.cz",
+        "snippet": "© ALBI Česká republika a.s. © 2025 © ALBI Česká republika a.s. , Thámova 13, 186 00, Praha 8, tel: +420 730 800 720, e-mail: eshop@albi.cz. Realizace ...",
+        "htmlSnippet": "© ALBI <b>Česká republika</b> a.s. © 2025 © ALBI <b>Česká republika</b> a.s. , Thámova 13, 186 00, Praha 8, tel: +420 730 800 720, e-mail: eshop@albi.cz. Realizace&nbsp;...",
+        "formattedUrl": "https://albi.cz/",
+        "htmlFormattedUrl": "https://albi.cz/",
+        "pagemap": {
+          "offer": [
+            {
+              "price": "1529.00",
+              "name": "Albi tužka 2.0 a Zvířátka v ZOO",
+              "url": "https://albi.cz/sada-albi-tuzka-2-0-a-zviratka-v-zoo/"
+            },
+            {
+              "price": "251.00",
+              "name": "Roztančené fixy 3+",
+              "url": "https://albi.cz/roztancene-fixy-3-kvido/"
+            },
+            {
+              "price": "449.00",
+              "name": "Kniha Štístko a Poupěnka - Zpívej s námi",
+              "url": "https://albi.cz/kniha-stistko-a-poupenka-zpivej-s-nami/"
+            },
+            {
+              "price": "899.00",
+              "name": "Mluvicí tablík - Kvído",
+              "url": "https://albi.cz/mluvici-tablik-kvido/"
+            },
+            {
+              "price": "199.00",
+              "name": "Magické samolepky",
+              "url": "https://albi.cz/magicke-samolepky-pro-deti/"
+            },
+            {
+              "price": "1439.00",
+              "name": "Zapoj to!",
+              "url": "https://albi.cz/zapoj-to-svet-elektrickych-obvodu/"
+            },
+            {
+              "price": "62.00",
+              "name": "Náplň do luxusního diáře na rok 2026",
+              "url": "https://albi.cz/napln-do-luxusniho-diare-na-rok-2026/"
+            },
+            {
+              "price": "449.00",
+              "name": "Kniha Byl jednou jeden život",
+              "url": "https://albi.cz/kniha-byl-jednou-jeden-zivot/"
+            },
+            {
+              "price": "49.00",
+              "name": "Samolepky s omalovánkami - Pejsek",
+              "url": "https://albi.cz/samolepky-s-omalovankami-pejsek/"
+            },
+            {
+              "price": "99.00",
+              "name": "Únikovka - Útěk na západ",
+              "url": "https://albi.cz/unikovka-utek-na-zapad/"
+            },
+            {
+              "price": "29.00",
+              "name": "Desky s klipem A4 - Luční květy",
+              "url": "https://albi.cz/desky-s-klipem-a4-lucni-kvety/"
+            },
+            {
+              "price": "143.00",
+              "name": "Kapesní diář - Luční květy",
+              "url": "https://albi.cz/kapesni-diar-lucni-kvety/"
+            },
+            {
+              "price": "1529.00",
+              "name": "Albi tužka 2.0 a Zvířátka v ZOO",
+              "url": "https://albi.cz/sada-albi-tuzka-2-0-a-zviratka-v-zoo/"
+            },
+            {
+              "price": "251.00",
+              "name": "Roztančené fixy 3+",
+              "url": "https://albi.cz/roztancene-fixy-3-kvido/"
+            },
+            {
+              "price": "449.00",
+              "name": "Kniha Štístko a Poupěnka - Zpívej s námi",
+              "url": "https://albi.cz/kniha-stistko-a-poupenka-zpivej-s-nami/"
+            },
+            {
+              "price": "899.00",
+              "name": "Mluvicí tablík - Kvído",
+              "url": "https://albi.cz/mluvici-tablik-kvido/"
+            },
+            {
+              "price": "199.00",
+              "name": "Magické samolepky",
+              "url": "https://albi.cz/magicke-samolepky-pro-deti/"
+            },
+            {
+              "price": "1439.00",
+              "name": "Zapoj to!",
+              "url": "https://albi.cz/zapoj-to-svet-elektrickych-obvodu/"
+            },
+            {
+              "price": "62.00",
+              "name": "Náplň do luxusního diáře na rok 2026",
+              "url": "https://albi.cz/napln-do-luxusniho-diare-na-rok-2026/"
+            },
+            {
+              "price": "449.00",
+              "name": "Kniha Byl jednou jeden život",
+              "url": "https://albi.cz/kniha-byl-jednou-jeden-zivot/"
+            },
+            {
+              "price": "49.00",
+              "name": "Samolepky s omalovánkami - Pejsek",
+              "url": "https://albi.cz/samolepky-s-omalovankami-pejsek/"
+            },
+            {
+              "price": "99.00",
+              "name": "Únikovka - Útěk na západ",
+              "url": "https://albi.cz/unikovka-utek-na-zapad/"
+            },
+            {
+              "price": "29.00",
+              "name": "Desky s klipem A4 - Luční květy",
+              "url": "https://albi.cz/desky-s-klipem-a4-lucni-kvety/"
+            },
+            {
+              "price": "143.00",
+              "name": "Kapesní diář - Luční květy",
+              "url": "https://albi.cz/kapesni-diar-lucni-kvety/"
+            },
+            {
+              "price": "1529.00",
+              "name": "Albi tužka 2.0 a Zvířátka v ZOO",
+              "url": "https://albi.cz/sada-albi-tuzka-2-0-a-zviratka-v-zoo/"
+            },
+            {
+              "price": "251.00",
+              "name": "Roztančené fixy 3+",
+              "url": "https://albi.cz/roztancene-fixy-3-kvido/"
+            },
+            {
+              "price": "1529.00",
+              "name": "Albi tužka 2.0 a Zvířátka v ZOO",
+              "url": "https://albi.cz/sada-albi-tuzka-2-0-a-zviratka-v-zoo/"
+            },
+            {
+              "price": "449.00",
+              "name": "Karak 2: Imperium - Sada figurek",
+              "url": "https://albi.cz/karak-2-imperium-sada-figurek/"
+            },
+            {
+              "price": "2519.00",
+              "name": "Apex Legends: Desková hra",
+              "url": "https://albi.cz/apex-legends-deskova-hra/"
+            },
+            {
+              "price": "629.00",
+              "name": "Kapři a lekníny",
+              "url": "https://albi.cz/kapri-a-lekniny/"
+            },
+            {
+              "price": "1079.00",
+              "name": "Domeček - Skleník",
+              "url": "https://albi.cz/domecek-sklenik/"
+            },
+            {
+              "price": "404.00",
+              "name": "Kniha Slabikář",
+              "url": "https://albi.cz/kniha-slabikar/"
+            },
+            {
+              "price": "179.00",
+              "name": "Umím násobit - Interaktivní tabulka",
+              "url": "https://albi.cz/umim-nasobit-interaktivni-tabulka/"
+            },
+            {
+              "price": "899.00",
+              "name": "Mluvicí tablík - Kvído",
+              "url": "https://albi.cz/mluvici-tablik-kvido/"
+            },
+            {
+              "price": "1709.00",
+              "name": "Noční dalekohled",
+              "url": "https://albi.cz/nocni-dalekohled/"
+            },
+            {
+              "price": "386.00",
+              "name": "Kniha Písničky o potvůrkách",
+              "url": "https://albi.cz/kniha-pisnicky-o-potvurkach/"
+            },
+            {
+              "price": "528.00",
+              "name": "Vykopej a objevuj - Minerály - set 12 ks",
+              "url": "https://albi.cz/vykopej-a-objevuj-mineraly/"
+            },
+            {
+              "price": "4319.00",
+              "name": "Frosthaven",
+              "url": "https://albi.cz/frosthaven/"
+            },
+            {
+              "price": "1529.00",
+              "name": "Albi tužka 2.0 a Zvířátka v ZOO",
+              "url": "https://albi.cz/sada-albi-tuzka-2-0-a-zviratka-v-zoo/"
+            },
+            {
+              "price": "449.00",
+              "name": "Karak 2: Imperium - Sada figurek",
+              "url": "https://albi.cz/karak-2-imperium-sada-figurek/"
+            },
+            {
+              "price": "2519.00",
+              "name": "Apex Legends: Desková hra",
+              "url": "https://albi.cz/apex-legends-deskova-hra/"
+            },
+            {
+              "price": "629.00",
+              "name": "Kapři a lekníny",
+              "url": "https://albi.cz/kapri-a-lekniny/"
+            },
+            {
+              "price": "1079.00",
+              "name": "Domeček - Skleník",
+              "url": "https://albi.cz/domecek-sklenik/"
+            },
+            {
+              "price": "404.00",
+              "name": "Kniha Slabikář",
+              "url": "https://albi.cz/kniha-slabikar/"
+            },
+            {
+              "price": "179.00",
+              "name": "Umím násobit - Interaktivní tabulka",
+              "url": "https://albi.cz/umim-nasobit-interaktivni-tabulka/"
+            },
+            {
+              "price": "899.00",
+              "name": "Mluvicí tablík - Kvído",
+              "url": "https://albi.cz/mluvici-tablik-kvido/"
+            },
+            {
+              "price": "1709.00",
+              "name": "Noční dalekohled",
+              "url": "https://albi.cz/nocni-dalekohled/"
+            },
+            {
+              "price": "386.00",
+              "name": "Kniha Písničky o potvůrkách",
+              "url": "https://albi.cz/kniha-pisnicky-o-potvurkach/"
+            },
+            {
+              "price": "528.00",
+              "name": "Vykopej a objevuj - Minerály - set 12 ks",
+              "url": "https://albi.cz/vykopej-a-objevuj-mineraly/"
+            },
+            {
+              "price": "4319.00",
+              "name": "Frosthaven",
+              "url": "https://albi.cz/frosthaven/"
+            },
+            {
+              "price": "1529.00",
+              "name": "Albi tužka 2.0 a Zvířátka v ZOO",
+              "url": "https://albi.cz/sada-albi-tuzka-2-0-a-zviratka-v-zoo/"
+            },
+            {
+              "price": "449.00",
+              "name": "Karak 2: Imperium - Sada figurek",
+              "url": "https://albi.cz/karak-2-imperium-sada-figurek/"
+            }
+          ],
+          "metatags": [
+            {
+              "msapplication-tilecolor": "#ffffff",
+              "p:domain_verify": "4fda3be3692eecf4670570f8a56952ee",
+              "msapplication-config": "/common-project/images/layout/favicon/browserconfig.xml",
+              "theme-color": "#ffffff",
+              "twitter:card": "summary",
+              "twitter:title": "Albi.cz | Úvodní strana",
+              "viewport": "width=device-width, initial-scale=1",
+              "twitter:description": "Společenské hry, Kouzelné čtení, dětské hry Kvído, tipy na dárky, prémiové vonné svíčky Heart and Home a spoustu další radosti najdete u Albi.",
+              "msapplication-tileimage": "/common-project/images/layout/favicon/mstile-144x144.png"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "customsearch#result",
+        "title": "Czech Republic | History, Flag, Map, Capital, Population, & Facts ...",
+        "htmlTitle": "<b>Czech</b> Republic | History, Flag, Map, Capital, Population, &amp; Facts ...",
+        "link": "https://www.britannica.com/place/Czech-Republic",
+        "displayLink": "www.britannica.com",
+        "snippet": "Czech Republic, also called Czechia, landlocked country located in central Europe. It comprises the historical provinces of Bohemia and Moravia along with the ...",
+        "htmlSnippet": "<b>Czech</b> Republic, also called Czechia, landlocked country located in central Europe. It comprises the historical provinces of Bohemia and Moravia along with the&nbsp;...",
+        "formattedUrl": "https://www.britannica.com/place/Czech-Republic",
+        "htmlFormattedUrl": "https://www.britannica.com/place/Czech-Republic",
+        "pagemap": {
+          "cse_thumbnail": [
+            {
+              "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4LVJJ-yYYy4vd_JcEU8sXMKMQH1ghFq2Qw5bFTR2YyjpnmZxNxPY1n5s&s",
+              "width": "259",
+              "height": "194"
+            }
+          ],
+          "metatags": [
+            {
+              "og:image": "com.britannica.mendel.util.entities.Image@2f95b870",
+              "twitter:card": "summary_large_image",
+              "og:type": "ARTICLE",
+              "og:site_name": "Encyclopedia Britannica",
+              "og:title": "Czech Republic | History, Flag, Map, Capital, Population, & Facts | Britannica",
+              "og:description": "Czech Republic, country located in central Europe. It comprises the historical provinces of Bohemia and Moravia along with the southern tip of Silesia, collectively called the Czech Lands. In 2016 the country adopted the name Czechia as a shortened, informal name for the Czech Republic. The capital is Prague.",
+              "twitter:image": "/86/7886-050-9D2D04BC/Flag-Czech-Republic.jpg",
+              "last-modified": "2025-10-18",
+              "fb:app_id": "1887621861548296",
+              "twitter:site": "@britannica",
+              "viewport": "width=device-width, initial-scale=1.0",
+              "twitter:description": "Czech Republic, country located in central Europe. It comprises the historical provinces of Bohemia and Moravia along with the southern tip of Silesia, collectively called the Czech Lands. In 2016 the country adopted the name Czechia as a shortened, informal name for the Czech Republic. The capital is Prague.",
+              "og:url": "https://www.britannica.com/place/Czech-Republic"
+            }
+          ],
+          "cse_image": [
+            {
+              "src": "https://cdn.britannica.com/87/7887-050-A75D365F/Czech-Republic-boundaries-map-cities-locator.jpg?w=400&h=300&c=crop"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "customsearch#result",
+        "title": "BCD Travel Česká republika",
+        "htmlTitle": "BCD Travel <b>Česká republika</b>",
+        "link": "https://www.bcdtravel.com/country/czechrepublic/",
+        "displayLink": "www.bcdtravel.com",
+        "snippet": "Partnering for profitable travel management. Providing travelers with the most advanced tools for safety, security and increased productivity.",
+        "htmlSnippet": "Partnering for profitable travel management. Providing travelers with the most advanced tools for safety, security and increased productivity.",
+        "formattedUrl": "https://www.bcdtravel.com/country/czechrepublic/",
+        "htmlFormattedUrl": "https://www.bcdtravel.com/country/czechrepublic/",
+        "pagemap": {
+          "cse_thumbnail": [
+            {
+              "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSieJCVxZGZdQX3hRASiip5a_3yxPdLJC6FfHfEcWiDn7aYhVRO3nxKH8VD&s",
+              "width": "225",
+              "height": "225"
+            }
+          ],
+          "metatags": [
+            {
+              "og:image": "https://www.bcdtravel.com/wp-content/uploads/BCD-Travel-Logo-Square-512x512-1.png",
+              "og:image:width": "512",
+              "twitter:card": "summary_large_image",
+              "og:site_name": "BCD Travel",
+              "msapplication-tileimage": "https://www.bcdtravel.com/wp-content/uploads/cropped-BCD-Travel-Spark-Icon-270x270.png",
+              "og:description": "BCD Travel in Česká republika: Partnering for profitable travel management.",
+              "twitter:creator": "@bcdtravel",
+              "article:publisher": "https://facebook.com/bcdtravel",
+              "og:image:secure_url": "https://www.bcdtravel.com/wp-content/uploads/BCD-Travel-Logo-Square-512x512-1.png",
+              "twitter:image": "https://www.bcdtravel.com/wp-content/uploads/bcd-travel-logo-1200x627-1.jpg",
+              "twitter:site": "@bcdtravel",
+              "dc.source": "https://www.bcdtravel.com/",
+              "dc.description": "BCD Travel in Česká republika: Partnering for profitable travel management.",
+              "og:type": "article",
+              "twitter:title": "BCD Travel Česká republika",
+              "og:title": "BCD Travel Česká republika",
+              "og:image:height": "512",
+              "article:author": "https://facebook.com/bcdtravel",
+              "viewport": "width=device-width, initial-scale=1",
+              "twitter:description": "BCD Travel in Česká republika: Partnering for profitable travel management.",
+              "dc.relation": "https://www.bcdtravel.com/country/czechrepublic/",
+              "dc.title": "BCD Travel Česká republika",
+              "og:locale": "en_US",
+              "dc.language": "en_US",
+              "og:url": "https://www.bcdtravel.com/country/czechrepublic/"
+            }
+          ],
+          "creativework": [
+            {
+              "text": "BCD Travel in Česká republika Partnering for profitable travel management. Providing travelers with the most advanced tools for safety, security and increased productivity to make smart choices..."
+            }
+          ],
+          "cse_image": [
+            {
+              "src": "https://www.bcdtravel.com/wp-content/uploads/BCD-Travel-Logo-Square-512x512-1.png"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "customsearch#result",
+        "title": "Prague Czech Republic | Teradata Global Office Locations",
+        "htmlTitle": "Prague <b>Czech</b> Republic | Teradata Global Office Locations",
+        "link": "https://www.teradata.com/about-us/office-locations/czech-republic",
+        "displayLink": "www.teradata.com",
+        "snippet": "Learn more about our Teradata office located in Prague, Czech Republic. Find address and contact information here.",
+        "htmlSnippet": "Learn more about our Teradata office located in Prague, <b>Czech</b> Republic. Find address and contact information here.",
+        "formattedUrl": "https://www.teradata.com/about-us/office-locations/czech-republic",
+        "htmlFormattedUrl": "https://www.teradata.com/about-us/office-locations/czech-republic",
+        "pagemap": {
+          "cse_thumbnail": [
+            {
+              "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEqL8FvrKejmnjP7GpYvAx_hDDFCBDOLhskLUQkskSvCsgSI_ypLjrdX8&s",
+              "width": "310",
+              "height": "163"
+            }
+          ],
+          "metatags": [
+            {
+              "og:image": "https://www.teradata.com/Content/Assets/default/teradata-logo-social.png",
+              "og:image:width": "640",
+              "twitter:card": "summary_large_image",
+              "og:type": "website",
+              "article:published_time": "2022-03-21T13:32:06-07:00",
+              "twitter:site": "@teradata",
+              "article:modified_time": "2023-08-15T16:55:36-07:00",
+              "viewport": "width=device-width, initial-scale=1",
+              "og:title": "Prague Czech Republic | Teradata Global Office Locations",
+              "og:image:height": "336",
+              "og:description": "Learn more about our Teradata office located in Prague, Czech Republic. Find address and contact information here.",
+              "twitter:image": "https://www.teradata.com/Content/Assets/default/teradata-logo-social.png"
+            }
+          ],
+          "webpage": [
+            {
+              "name": "About us"
+            },
+            {
+              "name": "Office Locations"
+            }
+          ],
+          "cse_image": [
+            {
+              "src": "https://www.teradata.com/Content/Assets/default/teradata-logo-social.png"
+            }
+          ],
+          "listitem": [
+            {
+              "item": "Home",
+              "name": "Home",
+              "position": "1"
+            },
+            {
+              "position": "2"
+            },
+            {
+              "position": "3"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
