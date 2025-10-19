@@ -3,7 +3,7 @@
 @section('content')
     <div class="mx-auto max-w-2xl">
         <h1 class="text-2xl font-semibold">Query Miner</h1>
-        <p class="text-sm text-slate-500 mt-1">Enter a keyword phrase and press Search. (Simplified view.)</p>
+        <p class="text-sm text-slate-500 mt-1">Enter a keyword phrase and press Search.</p>
 
         <form id="searchForm" method="post" class="mt-4">
             @csrf
