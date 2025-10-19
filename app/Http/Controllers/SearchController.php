@@ -113,8 +113,12 @@ class SearchController extends Controller
 
         $filename = 'search-results-'.date('Y-m-d-His').'.json';
 
-        return response()->json($data, 200, [
-            'Content-Type' => 'application/json',
+        // Use JSON_UNESCAPED_UNICODE to preserve UTF-8 characters (Czech, etc.)
+        // and JSON_PRETTY_PRINT for readability
+        $json = json_encode($data, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
+
+        return response($json, 200, [
+            'Content-Type' => 'application/json; charset=utf-8',
             'Content-Disposition' => 'attachment; filename="'.$filename.'"',
         ]);
     }
