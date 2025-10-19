@@ -105,8 +105,10 @@
             if(!data || !data.results) return;
             const rows = [['title','snippet','link','displayLink']];
             data.results.forEach(r => rows.push([r.title || '', r.snippet || '', r.link || '', r.displayLink || '']));
-            const csv = rows.map(r => r.map(cell => '"' + (String(cell).replace(/"/g,'""')) + '"').join(',')).join('\n');
-            const blob = new Blob([csv], { type: 'text/csv' });
+            const csv = rows.map(r => r.map(cell => '"' + (String(cell).replace(/"/g,'""')) + '"').join(',')).join('\r\n');
+            // Prepend UTF-8 BOM to help Excel on Windows detect UTF-8 encoding
+            const csvWithBOM = '\uFEFF' + csv;
+            const blob = new Blob([csvWithBOM], { type: 'text/csv;charset=utf-8;' });
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url; a.download = 'results.csv'; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
